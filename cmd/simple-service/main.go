@@ -6,7 +6,7 @@ import (
 
 func fizzbuzz(input int) string {
 	if (fizz(input) + buzz(input)) == "" {
-		return ""
+		return strconv.Itoa(input)
 	} else {
 		return fizz(input) + buzz(input)
 	}
